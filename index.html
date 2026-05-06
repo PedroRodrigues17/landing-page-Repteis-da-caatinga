@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museu Répteis da Caatinga</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <img src="logo.png" alt="Logo Museu" class="logo-img">
+      <span>MUSEU RÉPTEIS</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero" class="active">Início</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#species">Répteis</a></li>
+      <li><a href="#visit">Visitação</a></li>
+    
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <svg class="cactus-deco" width="220" height="400" viewBox="0 0 220 400" fill="none">
+      <rect x="95" y="80" width="30" height="280" rx="15" fill="#4a7c2f"/>
+      <rect x="40" y="140" width="55" height="28" rx="14" fill="#4a7c2f"/>
+      <rect x="40" y="100" width="30" height="70" rx="15" fill="#4a7c2f"/>
+      <rect x="125" y="170" width="55" height="28" rx="14" fill="#4a7c2f"/>
+      <rect x="150" y="130" width="30" height="90" rx="15" fill="#4a7c2f"/>
+    </svg>
+
+    <div class="hero-content reveal">
+      <h1>
+        MUSEU
+        <span>RÉPTEIS DA</span>
+        CAATINGA
+      </h1>
+      <p>Conectando você à biodiversidade única e fascinante da Caatinga.</p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn-primary">Conheça o museu</a>
+      </div>
+    </div>
+
+    <div class="hero-image reveal">
+      <img src="" alt="Réptil da Caatinga" onerror="this.style.display='none'" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-text reveal">
+      <div class="section-label">🐍 Sobre o Museu</div>
+      <h2 class="section-title">PRESERVAR É<br>CONHECER</h2>
+      <p>O Museu Vivo Répteis da Caatinga é um espaço único no Nordeste, dedicado à preservação e exposição de répteis. Criado em 2001, o museu oferece uma experiência educativa e interativa, aproximando o público de animais que normalmente causam medo ou curiosidade.
+
+Mais do que um zoológico, o museu tem como missão educar, conscientizar e preservar, mostrando a importância desses animais para o equilíbrio da natureza.
+
+Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.</p>
+
+      <div class="about-pillars">
+        <div class="pillar">
+          <div class="pillar-icon">📚</div>
+          <h4>Educação</h4>
+          <p>Descubra o mundo dos répteis de forma simples e envolvente, com experiências que despertam curiosidade e aprendizado para todas as idades.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🌿</div>
+          <h4>Conservação</h4>
+          <p>Conheça a importância dos répteis para a natureza e como o museu atua na proteção de espécies da Caatinga.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🔬</div>
+          <h4>Pesquisa</h4>
+          <p>Aprofunde seu conhecimento com estudos e atividades que contribuem para a preservação e entendimento da fauna.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-image reveal">
+      <img src="cobra sorrindo.png" alt="Museu da Caatinga" onerror="this.src=''" />
+    </div>
+  </section>
+
+  <!-- SPECIES -->
+  <section class="species" id="species">
+    <div class="reveal">
+      <div class="section-label">Espécies em Destaque</div>
+      <h2 class="section-title">CONHEÇA OS<br>RÉPTEIS</h2>
+    </div>
+
+    <div class="species-grid">
+      <div class="species-card reveal">
+        <img src="https://images.unsplash.com/photo-1610660989085-e9d1f96a9c3f?w=400&q=80" alt="Lagartos" onerror="this.src='https://placehold.co/400x200/1a2e1a/e8c84a?text=Lagartos'"/>
+        <div class="species-info">
+          <h3>Lagartos</h3>
+          <p>Fascinantes répteis da Caatinga, com diversidade e adaptações únicas ao semiárido.</p>
+          <button class="species-btn">Saiba mais</button>
+        </div>
+      </div>
+
+      <div class="species-card reveal">
+        <img src="https://images.unsplash.com/photo-1520638023360-c7f0bdc3a4b7?w=400&q=80" alt="Cobras" onerror="this.src='https://placehold.co/400x200/1a2e1a/e8c84a?text=Cobras'"/>
+        <div class="species-info">
+          <h3>Cobras</h3>
+          <p>Espécies peçonhentas e não peçonhentas, representantes da nossa fauna.</p>
+          <button class="species-btn">Saiba mais</button>
+        </div>
+      </div>
+
+      <div class="species-card reveal">
+        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&q=80" alt="Quelônios" onerror="this.src='https://placehold.co/400x200/1a2e1a/e8c84a?text=Quelônios'"/>
+        <div class="species-info">
+          <h3>Quelônios</h3>
+          <p>Tartarugas e cágados nativos da Caatinga, essenciais ao equilíbrio ambiental.</p>
+          <button class="species-btn">Saiba mais</button>
+        </div>
+      </div>
+
+      <div class="species-card reveal">
+        <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&q=80" alt="Outros Répteis" onerror="this.src='https://placehold.co/400x200/1a2e1a/e8c84a?text=Outros+Répteis'"/>
+        <div class="species-info">
+          <h3>Outros Répteis</h3>
+          <p>Descubra outras espécies igualmente impressionantes representadas no museu.</p>
+          <button class="species-btn">Saiba mais</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="reveal">
+      <div class="section-label">Agende sua visita</div>
+      <h2 class="section-title">VENHA NOS<br>CONHECER</h2>
+
+      <!-- Tagline do museu -->
+      <p class="visit-tagline">
+        <strong>Conhecer para Preservar</strong> — 23 anos levando Educação Ambiental à Caatinga. 💚
+      </p>
+
+      <div class="visit-info">
+        <div class="visit-card">
+          <div class="icon">📍</div>
+          <h4>Localização</h4>
+          <p>
+            R. Paulo Américo Paiva, 288<br>
+            Sítio Grotão — Puxinanã, PB<br>
+            CEP: 58115-000<br><br>
+            <a href="https://www.google.com/maps/dir/-7.2422512,-35.9011675/Museu+Vivo+R%C3%A9pteis+da+Caatinga,+R.+Paulo+Am%C3%A9rico+Paiva,+288+-+S%C3%ADtio+Grot%C3%A3o,+Puxinan%C3%A3+-+PB,+58115-000/@-7.2379726,-35.9261013,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x7aea1cfa46748ef:0xd260e0999f8998b!2m2!1d-35.9679025!2d-7.1820201?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener"><strong>Como chegar →</strong></a>
+          </p>
+        </div>
+        <div class="visit-card">
+          <div class="icon">📞</div>
+          <h4>Contato</h4>
+          <p>
+            (83) 3326-0011<br>
+            Atendimento de 8h às 17h<br><br>
+            <a href="https://wa.me/5587999990000" target="_blank" rel="noopener"><strong>Falar no WhatsApp →</strong></a>
+          </p>
+        </div>
+        <div class="visit-card">
+          <div class="icon">📸</div>
+          <h4>Instagram</h4>
+          <p>
+            @repteis_da_caatinga<br>
+            Siga-nos e acompanhe<br>nossas novidades!<br><br>
+            <a href="https://www.instagram.com/repteis_da_caatinga/" target="_blank" rel="noopener"><strong>Seguir →</strong></a>
+          </p>
+        </div>
+        <div class="visit-card">
+          <div class="icon">🕐</div>
+          <h4>Programação / Visitas</h4>
+          <p>
+            📅 <strong>Seg. a Sáb.</strong><br>
+            Mediante agendamento<br><br>
+            📅 <strong>Domingos</strong><br>
+            8h30 às 11h30 (sem agendamento)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="visit-map reveal" id="contact">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0837568528994!2d-35.97047742521743!3d-7.182014792822557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aea1cfa46748ef%3A0xd260e0999f8998b!2sMuseu%20Vivo%20R%C3%A9pteis%20da%20Caatinga!5e0!3m2!1spt-BR!2sbr!4v1714400000000!5m2!1spt-BR!2sbr"
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Museu Répteis da Caatinga. Todos os direitos reservados. | Feito com <span>♥</span> pela Caatinga.
+  </footer>
+
+  <div class="whatsapp-container">
+    <img src="cobra_sorrindo-removebg-preview.png" alt="Cobra decorativa" class="cobra-decor" />
+    <img src="cobra-lingua_pra_fora-removebg-preview.png" alt="Língua da cobra" class="cobra-lingua" id="linguaCobra" />
+    <a href="https://wa.me/5587999990000" class="whatsapp-fab" target="_blank" rel="noopener" title="WhatsApp">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
