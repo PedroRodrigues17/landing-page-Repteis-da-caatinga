@@ -44,12 +44,12 @@ const panelFact = document.getElementById('panelFact');
 const speciesData = {
   'Lagartos': {
     subtitle: 'Sauria — lagartos da Caatinga',
-    img: 'https://images.unsplash.com/photo-1610660989085-e9d1f96a9c3f?w=1000&q=80',
-    description: 'Os lagartos da Caatinga incluem várias famílias adaptadas ao clima semiárido: alguns escavam para escapar do calor, outros são ativos ao amanhecer. Possuem adaptações de pele e comportamento que lhes permitem conservar água.',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Green_iguana_%28Iguana_iguana%29_juvenile_head.jpg',
+    description: 'Os lagartos da Caatinga incluem várias famílias adaptadas ao clima semiárido: alguns escavam para escapar do calor, outros são ativos ao amanhecer. A imagem apresentada mostra uma iguana verde juvenil, usada aqui como referência visual para o card de lagartos.',
     habitat: 'Cerrados secos, caatinga arbustiva, áreas rochosas e entre a vegetação esparsa.',
     diet: 'Insetos, pequenos invertebrados e, dependendo da espécie, frutas e vegetação ocasional.',
     status: 'A maior parte das espécies locais apresenta risco baixo, mas populações isoladas podem estar ameaçadas por perda de habitat.',
-    fact: 'Alguns lagartos conseguem regenerar a cauda como estratégia de fuga; observando com calma você pode ver marcas de regeneração em indivíduos adultos.'
+    fact: 'Alguns lagartos conseguem regenerar a cauda como estratégia de fuga; observando com calma você pode ver marcas de regeneração em indivíduos adultos. A foto usada no card é de uma iguana verde juvenil do Wikimedia Commons.'
   },
   'Cobras': {
     subtitle: 'Serpentes — diversidade peçonhenta e não peçonhenta | Mascote: Píton Albina',
@@ -62,21 +62,21 @@ const speciesData = {
   },
   'Quelônios': {
     subtitle: 'Quelônios — tartarugas e jabutis da Caatinga',
-    img: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1000&q=80',
-    description: 'Os quelônios incluem jabutis (tartarugas terrestres) e cágados; são importantes dispersores de sementes e parte vital do ecossistema. Jabutis terrestres são frequentemente chamados "jabutis" e encontram-se em áreas de solo firmer.',
+    img: 'https://commons.wikimedia.org/wiki/Special:FilePath/Red-footed_Tortoise_in_Barbados_02.jpg',
+    description: 'Os quelônios incluem jabutis (tartarugas terrestres) e cágados; são importantes dispersores de sementes e parte vital do ecossistema. Os jabutis terrestres vivem em áreas de solo firme, com vegetação baixa e bastante sombra.',
     habitat: 'Solo firme com vegetação rasteira, áreas de sombra e proximidade de recursos hídricos sazonais.',
     diet: 'Herbívoros ou onívoros: frutas, folhas, flores e, ocasionalmente, pequenos invertebrados.',
     status: 'Algumas populações são vulneráveis devido à captura e perda de habitat; a reprodução é lenta.',
     fact: 'Os jabutis têm uma relação importante com a regeneração de plantas, pois dispersam sementes inteiras que conseguem germinar melhor após passagem pelo trato digestivo.'
   },
-  'Outros Répteis': {
-    subtitle: 'Outras espécies representativas',
-    img: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=1000&q=80',
-    description: 'Inclui diversas famílias com comportamentos e nichos variados; cada espécie tem papel ecológico específico.',
-    habitat: 'Varia bastante conforme a espécie.',
-    diet: 'Varia conforme a espécie — insectívoro, carnívoro ou herbívoro.',
-    status: 'Varia por espécie.',
-    fact: 'A diversidade de répteis é maior do que muitos imaginam; observar em campo revela adaptações surpreendentes.'
+  'Iguanas': {
+    subtitle: 'Iguanas — répteis arborícolas e robustos',
+    img: 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=1000&q=80',
+    description: 'As iguanas são répteis de porte imponente, cauda longa e hábitos que variam entre a vegetação densa e áreas ensolaradas. Apesar de não serem nativas da Caatinga, são animais muito conhecidos e ajudam a aproximar o público do universo dos répteis.',
+    habitat: 'Áreas arborizadas, regiões quentes e ambientes com acesso a sol e sombra.',
+    diet: 'Principalmente folhas, frutos e brotos, com variação conforme a espécie.',
+    status: 'Em geral não ameaçadas, mas a conservação depende do habitat adequado e do controle de tráfico de animais.',
+    fact: 'As iguanas usam o calor do sol para regular a temperatura corporal e podem permanecer longos períodos imóveis nas árvores.'
   }
 };
 
