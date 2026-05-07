@@ -12,6 +12,68 @@ const observer = new IntersectionObserver((entries) => {
 reveals.forEach(el => observer.observe(el));
 
 
+// ── Carrossel do bloco Sobre ──
+const aboutCarousel = document.querySelector('[data-about-carousel]');
+if (aboutCarousel) {
+  const slides = Array.from(aboutCarousel.querySelectorAll('.carousel-slide'));
+  const prevButton = aboutCarousel.querySelector('[data-carousel-prev]');
+  const nextButton = aboutCarousel.querySelector('[data-carousel-next]');
+  const dotsContainer = aboutCarousel.querySelector('.carousel-dots');
+  let activeIndex = 0;
+  let autoplayId = null;
+
+  const dots = slides.map((_, index) => {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'carousel-dot';
+    dot.setAttribute('aria-label', `Ir para a imagem ${index + 1}`);
+    dot.addEventListener('click', () => setSlide(index));
+    dotsContainer.appendChild(dot);
+    return dot;
+  });
+
+  function setSlide(index) {
+    activeIndex = (index + slides.length) % slides.length;
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle('is-active', slideIndex === activeIndex);
+    });
+    dots.forEach((dot, dotIndex) => {
+      dot.classList.toggle('active', dotIndex === activeIndex);
+    });
+  }
+
+  function nextSlide() {
+    setSlide(activeIndex + 1);
+  }
+
+  function previousSlide() {
+    setSlide(activeIndex - 1);
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    autoplayId = setInterval(nextSlide, 4500);
+  }
+
+  function stopAutoplay() {
+    if (autoplayId) {
+      clearInterval(autoplayId);
+      autoplayId = null;
+    }
+  }
+
+  prevButton.addEventListener('click', previousSlide);
+  nextButton.addEventListener('click', nextSlide);
+  aboutCarousel.addEventListener('mouseenter', stopAutoplay);
+  aboutCarousel.addEventListener('mouseleave', startAutoplay);
+  aboutCarousel.addEventListener('focusin', stopAutoplay);
+  aboutCarousel.addEventListener('focusout', startAutoplay);
+
+  setSlide(0);
+  startAutoplay();
+}
+
+
 // ── Active nav on scroll ──
 const sections = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('.nav-links a');
