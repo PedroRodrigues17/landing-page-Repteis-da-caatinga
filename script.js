@@ -139,6 +139,15 @@ const speciesData = {
     diet: 'Principalmente folhas, frutos e brotos, com variação conforme a espécie.',
     status: 'Em geral não ameaçadas, mas a conservação depende do habitat adequado e do controle de tráfico de animais.',
     fact: 'As iguanas usam o calor do sol para regular a temperatura corporal e podem permanecer longos períodos imóveis nas árvores.'
+  },
+  'Jacarés': {
+    subtitle: 'Crocodilianos — predadores semiaquáticos',
+    img: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yacare_caiman_(Caiman_yacare)_juvenile.JPG',
+    description: 'Os jacarés são répteis semiaquáticos de corpo robusto, focinho alongado e mandíbula muito forte. Passam boa parte do tempo na água ou nas margens, onde se camuflam com facilidade e caçam de forma eficiente. Eles são importantes para o equilíbrio dos ambientes aquáticos, ajudando a controlar populações de outros animais.',
+    habitat: 'Rios, lagoas, brejos, áreas alagadas e margens com vegetação densa, onde conseguem se esconder e se aquecer ao sol.',
+    diet: 'Peixes, crustáceos, anfíbios, aves, pequenos mamíferos e, quando disponíveis, carcaças de animais.',
+    status: 'A conservação varia conforme a espécie e a pressão humana sobre rios e brejos; a proteção das áreas úmidas é essencial para sua sobrevivência.',
+    fact: 'Os jacarés têm excelente visão e audição, além de olhos e narinas posicionados no topo da cabeça, o que permite ficar quase totalmente submersos enquanto observam o ambiente.'
   }
 };
 
