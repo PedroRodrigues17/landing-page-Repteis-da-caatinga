@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Museu Vivo Répteis da Caatinga</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400;1,9..40,500;1,9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
@@ -13,28 +16,32 @@
   <nav>
     <a href="#" class="nav-logo">
       <img src="logo.png" alt="Logo Museu" class="logo-img">
-      <span>R.D.C</span>
+      <span>Répteis da Caatinga</span>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="primaryNav">
       <li><a href="#hero" class="active">Início</a></li>
       <li><a href="#about">Sobre</a></li>
       <li><a href="#species">Répteis</a></li>
       <li><a href="#visit">Visitação</a></li>
-    
     </ul>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar modo escuro" aria-pressed="false">
+      <span class="theme-toggle-track" aria-hidden="true">
+        <span class="theme-toggle-thumb">
+          <i data-lucide="sun" class="toggle-icon toggle-icon-sun"></i>
+          <i data-lucide="moon" class="toggle-icon toggle-icon-moon"></i>
+        </span>
+      </span>
+    </button>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primaryNav">
+      <i data-lucide="menu" class="menu-icon menu-icon-open"></i>
+      <i data-lucide="x" class="menu-icon menu-icon-close"></i>
+    </button>
   </nav>
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <svg class="cactus-deco" width="220" height="400" viewBox="0 0 220 400" fill="none">
-      <rect x="95" y="80" width="30" height="280" rx="15" fill="#4a7c2f"/>
-      <rect x="40" y="140" width="55" height="28" rx="14" fill="#4a7c2f"/>
-      <rect x="40" y="100" width="30" height="70" rx="15" fill="#4a7c2f"/>
-      <rect x="125" y="170" width="55" height="28" rx="14" fill="#4a7c2f"/>
-      <rect x="150" y="130" width="30" height="90" rx="15" fill="#4a7c2f"/>
-    </svg>
-
     <div class="hero-content reveal">
+      <span class="hero-kicker">Puxinanã · Paraíba · Desde 2001</span>
       <h1>
         MUSEU VIVO
         <span>RÉPTEIS DA</span>
@@ -43,6 +50,7 @@
       <p>Conectando você à biodiversidade única e fascinante da Caatinga.</p>
       <div class="hero-buttons">
         <a href="#about" class="btn-primary">Conheça o Museu Vivo</a>
+        <a href="#visit" class="btn-outline">Como chegar</a>
       </div>
     </div>
 
@@ -54,27 +62,29 @@
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="about-text reveal">
-      <div class="section-label">🐍 Sobre o Museu Vivo</div>
+      <div class="section-label">
+        <i data-lucide="info" class="label-icon"></i> Sobre o Museu Vivo
+      </div>
       <h2 class="section-title">PRESERVAR É<br>CONHECER</h2>
-      <p>O Museu Vivo Répteis da Caatinga é um espaço único no Nordeste, dedicado à preservação e exposição de répteis. Criado em 2001, o museu oferece uma experiência educativa e interativa, aproximando o público de animais que normalmente causam medo ou curiosidade.
+      <p class="section-lead">O Museu Vivo Répteis da Caatinga é um espaço único no Nordeste, dedicado à preservação e exposição de répteis. Criado em 2001, o museu oferece uma experiência educativa e interativa, aproximando o público de animais que normalmente causam medo ou curiosidade.</p>
 
-Mais do que um museu comum, o Museu Vivo tem como missão educar, conscientizar e preservar, mostrando a importância desses animais para o equilíbrio da natureza.
+      <p>Mais do que um museu comum, o Museu Vivo tem como missão educar, conscientizar e preservar, mostrando a importância desses animais para o equilíbrio da natureza.</p>
 
-Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.</p>
+      <p>Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.</p>
 
       <div class="about-pillars">
         <div class="pillar">
-          <div class="pillar-icon">📚</div>
+          <div class="pillar-icon"><i data-lucide="book-open"></i></div>
           <h4>Educação</h4>
           <p>Descubra o mundo dos répteis de forma simples e envolvente, com experiências que despertam curiosidade e aprendizado para todas as idades.</p>
         </div>
         <div class="pillar">
-          <div class="pillar-icon">🌿</div>
+          <div class="pillar-icon"><i data-lucide="leaf"></i></div>
           <h4>Conservação</h4>
           <p>Conheça a importância dos répteis para a natureza e como o Museu Vivo atua na proteção de espécies da Caatinga.</p>
         </div>
         <div class="pillar">
-          <div class="pillar-icon">🔬</div>
+          <div class="pillar-icon"><i data-lucide="microscope"></i></div>
           <h4>Pesquisa</h4>
           <p>Aprofunde seu conhecimento com estudos e atividades que contribuem para a preservação e entendimento da fauna.</p>
         </div>
@@ -83,7 +93,7 @@ Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.
 
     <div class="about-image reveal" data-about-carousel aria-label="Carrossel de fotos do Museu Vivo">
       <div class="carousel-frame">
-        <div class="carousel-track">
+        <div class="carousel-track" aria-live="polite">
           <figure class="carousel-slide is-active">
             <img src="cobra sorrindo.png" alt="Cobra mascote do Museu Vivo" onerror="this.style.display='none'" />
             <figcaption>Mascote do museu: Píton Albina</figcaption>
@@ -104,6 +114,7 @@ Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.
       </div>
       <button class="carousel-control carousel-prev" type="button" data-carousel-prev aria-label="Imagem anterior">‹</button>
       <button class="carousel-control carousel-next" type="button" data-carousel-next aria-label="Próxima imagem">›</button>
+      <button class="carousel-pause" type="button" data-carousel-pause aria-label="Pausar carrossel">⏸</button>
       <div class="carousel-dots" aria-hidden="true"></div>
     </div>
   </section>
@@ -111,7 +122,9 @@ Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.
   <!-- SPECIES -->
   <section class="species" id="species">
     <div class="reveal">
-      <div class="section-label">Espécies em Destaque</div>
+      <div class="section-label">
+        <i data-lucide="paw-print" class="label-icon"></i> Espécies em Destaque
+      </div>
       <h2 class="section-title">CONHEÇA OS<br>RÉPTEIS</h2>
     </div>
 
@@ -126,7 +139,7 @@ Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.
       </div>
 
       <div class="species-card reveal">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The_Grass_Snake_-_Natrix_natrix.jpg" alt="Cobra" onerror="this.src='https://placehold.co/400x200/1a2e1a/e8c84a?text=Cobras'"/>
+        <img src="cobra sorrindo.png" alt="Píton albina — mascote do Museu Vivo" onerror="this.src='https://placehold.co/400x200/1a2e1a/e8c84a?text=Cobras'"/>
         <div class="species-info">
           <h3>Cobras</h3>
           <p>Espécies peçonhentas e não peçonhentas, representantes da nossa fauna.</p>
@@ -157,17 +170,19 @@ Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.
   <!-- VISIT -->
   <section class="visit" id="visit">
     <div class="reveal">
-      <div class="section-label">Agende sua visita</div>
+      <div class="section-label">
+        <i data-lucide="calendar" class="label-icon"></i> Agende sua visita
+      </div>
       <h2 class="section-title">VENHA NOS<br>CONHECER</h2>
 
       <!-- Tagline do Museu Vivo -->
       <p class="visit-tagline">
-        <strong>Conhecer para Preservar</strong> — 23 anos levando Educação Ambiental à Caatinga. 💚
+        <strong>Conhecer para Preservar</strong> — 23 anos levando Educação Ambiental à Caatinga. <i data-lucide="heart" style="display: inline; width: 16px; height: 16px; color: var(--verde-primario);"></i>
       </p>
 
       <div class="visit-info">
         <div class="visit-card">
-          <div class="icon">📍</div>
+          <div class="icon"><i data-lucide="map-pin"></i></div>
           <h4>Localização</h4>
           <p>
             R. Paulo Américo Paiva, 288<br>
@@ -177,7 +192,7 @@ Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.
           </p>
         </div>
         <div class="visit-card">
-          <div class="icon">📞</div>
+          <div class="icon"><i data-lucide="phone"></i></div>
           <h4>Contato</h4>
           <p>
             (83) 3326-0011<br>
@@ -186,7 +201,11 @@ Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.
           </p>
         </div>
         <div class="visit-card">
-          <div class="icon">📸</div>
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+  <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+</svg></div>
           <h4>Instagram</h4>
           <p>
             @repteis_da_caatinga<br>
@@ -195,7 +214,7 @@ Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.
           </p>
         </div>
         <div class="visit-card">
-          <div class="icon">🕐</div>
+          <div class="icon"><i data-lucide="clock"></i></div>
           <h4>Programação / Visitas</h4>
           <p>
             📅 <strong>Seg. a Sáb.</strong><br>
@@ -221,8 +240,31 @@ Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    © 2026 Museu Vivo Répteis da Caatinga. Todos os direitos reservados. | Feito com <span>♥</span> pela Caatinga.
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="logo.png" alt="Logo Museu Vivo" class="footer-logo">
+        <p>Museu Vivo Répteis da Caatinga<br>Puxinanã, Paraíba</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#species">Répteis</a></li>
+          <li><a href="#visit">Visitação</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Redes</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/repteis_da_caatinga/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://wa.me/5587999990000" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Museu Vivo Répteis da Caatinga. Feito com <span>♥</span> pela Caatinga.
+    </div>
   </footer>
 
   <div class="whatsapp-container">
@@ -239,10 +281,15 @@ Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.
   <div class="panel-overlay" id="panelOverlay" aria-hidden="true"></div>
   <aside class="side-panel" id="sidePanel" aria-hidden="true" role="dialog" aria-label="Informações do animal">
     <button class="panel-close" id="panelClose" aria-label="Fechar painel">✕</button>
-    <div class="panel-content">
+    <div class="panel-hero">
       <img src="" alt="" class="panel-image" id="panelImage" />
-      <h3 class="panel-title" id="panelTitle"></h3>
-      <h4 class="panel-subtitle" id="panelSubtitle"></h4>
+      <div class="panel-hero-overlay">
+        <span class="iucn-chip" id="panelIucn"></span>
+        <h3 class="panel-title" id="panelTitle"></h3>
+        <h4 class="panel-subtitle" id="panelSubtitle"></h4>
+      </div>
+    </div>
+    <div class="panel-content">
       <p class="panel-description" id="panelDescription"></p>
 
       <div class="panel-meta">
@@ -259,5 +306,6 @@ Aqui, você aprende na prática que conhecer é o primeiro passo para preservar.
   </aside>
 
   <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
